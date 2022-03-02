@@ -4,7 +4,7 @@
       Get:2 http://deb.debian.org/debian buster InRelease [122 kB]
       Get:3 http://deb.debian.org/debian buster-updates InRelease [51.9 kB]
       Err:1 http://security.debian.org/debian-security buster/updates InRelease
-        The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 112695A0E562B32A NO_PUBKEY 54404762BBB6E853
+        The following signatures couldn't be verified because the public key is not available: NO_PUBKEY **112695A0E562B32A** NO_PUBKEY 54404762BBB6E853
       Err:2 http://deb.debian.org/debian buster InRelease
         The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 648ACFD622F3D138 NO_PUBKEY 0E98404D386FA1D9 NO_PUBKEY DCC9EFBF77E11517
       Err:3 http://deb.debian.org/debian buster-updates InRelease
@@ -25,7 +25,7 @@
       N: See apt-secure(8) manpage for repository creation and user configuration details.
 
 
-# Advertise the key from error message above
+# Advertise the key from error message above **112695A0E562B32A**
 for example 
 
       apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A
